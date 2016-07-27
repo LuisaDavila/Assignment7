@@ -1,0 +1,45 @@
+<!doctype html>
+
+<html lang="en">
+    
+    <head>
+        <meta charset="utf-8" />
+        <title>Jquery Example 1</title>
+        
+        <!--[if lt IE 9]>
+            <script src="js/html5shiv.min.js"></script>
+        <![endif]-->
+        
+        <link href="styles/main.css" type="text/css" rel="stylesheet" />
+        <script src="../js/jquery-3.1.0.min.js" type="text/javascript"></script>
+        
+        <!--Jquery method of adding text to a p tag-->
+        <script type="text/javascript">
+        $('document').ready(function(){
+            $('body').append('<p>This message is created via jQuery. It is simpler</p>');
+        })
+        
+        </script>
+        
+        <!--Javascript method of adding text to a p tag-->
+        <script type="text/javascript">
+        
+        window.addEventListener("DOMContentLoaded", function(evt){
+            var elem = document.getElementsByTagName("body")[0];
+            var par = document.createElement("p");
+            var text = document.createTextNode("This is a message created via Javascript.");
+            
+            par.appendChild(text); 
+            elem.appendChild(par);
+            
+        })
+        
+        </script>
+    </head>
+    
+    <body>
+       
+    
+    </body>
+    
+</html>

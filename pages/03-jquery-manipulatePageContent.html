@@ -1,0 +1,52 @@
+<!doctype html>
+
+<html lang="en">
+    
+    <head>
+        <meta charset="utf-8" />
+        <title>Jquery Example 3 Manipulate Page Content</title>
+        
+        <!--[if lt IE 9]>
+            <script src="js/html5shiv.min.js"></script>
+        <![endif]-->
+        
+        <link href="../styles/main.css" type="text/css" rel="stylesheet" />
+        <script src="../js/jquery-3.1.0.min.js" type="text/javascript"></script>
+        
+        <!--Jquery -->
+        <script type="text/javascript">
+            $(document).ready(function(){
+                //created new content
+                var newP = $("<p>"); //using a string to pass the p tag create a new DOm element creating a p tag
+                newP.append("This is brand <em>new</em>content.");
+                $("#example").html(newP);
+                //insert content infront of whatever currently exists
+                $('#example').prepend('check this out');
+                
+                //change existing content
+                $('#example').html('<h3>THis is really brand new content</h3>'); //grabs html element
+                
+                $('#example').text('<h3>THis is really brand new content</h3>'); // grabs html text
+            });
+        
+            
+            
+        </script>
+        
+    </head>
+    
+    <body>
+       <h1 id="intro">Using jQuery to Create/Change Content</h1>
+    <p>jQuery makes it very easy to create new page content and change existing page content.</p>
+    <h2 id="creation">Content Creation</h2>
+    <p>Creating new content is as simple as passing a string of HTML to the $() function.</p>
+    <p>For example, $("&lt;p&gt;") creates a new, empty paragraph tag. To add new content to the paragraph, you could simply write $("&lt;p&gt;").append("&lt;em&gt;Hello there&lt;/em&gt;").</p>
+    <h2 id="changing">Changing Content</h2>
+    <p>There are multiple ways to change page content using jQuery, depending on your needs.</p>
+    <p>The html() and text() functions can be used to directly manipulate the contents of elements, and there are ways to control how content can be inserted and moved around in the page.</p>
+    <div id="example">
+    </div>
+    
+    </body>
+    
+</html>

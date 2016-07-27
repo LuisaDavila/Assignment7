@@ -1,0 +1,48 @@
+<!doctype html>
+
+<html lang="en">
+    
+    <head>
+        <meta charset="utf-8" />
+        <title>Jquery Example 3 Manipulate Page Content</title>
+        
+        <!--[if lt IE 9]>
+            <script src="js/html5shiv.min.js"></script>
+        <![endif]-->
+        
+        <link href="../styles/main.css" type="text/css" rel="stylesheet" />
+        <script src="../js/jquery-3.1.0.min.js" type="text/javascript"></script>
+        
+        <!--Jquery -->
+        <script type="text/javascript">
+           $(document).ready(function(){
+//             $("a[href*='images']").css('color', 'red');
+               $("a[id-='selector']").css('color', 'red');
+          });
+        </script>
+        
+    </head>
+    
+    <body>
+    <article>
+    <ul>
+  <li><a href="images/pie.gif" target="_blank">pie graph example</a> (Pie Graph)</li>
+  <li><a href="images/graph.jpg" target="_blank">bar graph example</a> (Bar Graph)</li>
+  <li><a href="media/example1.pdf" target="_blank">read more about it</a> (How to create a graph)</li>
+  <li><a href="media/example1.doc" target="_blank">A thorough discussion on graphing</a> (everything about graphs and more)</li>
+  <li><a href="media/MathMadeEasy.mp4" target="_blank">you betcha!</a> (a video on graphing)</li>
+  <li><a href="http://nces.ed.gov/nceskids/graphing/classic/pie.asp" target="_blank">pie graphing</a> (pie graph creation made easy)</li>
+  <li><a href="http://nces.ed.gov/nceskids/createagraph/default.aspx?ID=8e5c3fb342df452b8ae1b0a500d9b10d" target="_blank">bar graphing</a> (Bar graphing made easy)</li>
+  <li><a href="http://www.podcast.com">weekly graphing pod cast</a> (Keep your graphing skills current)</li>
+  </ul>
+  
+<p>Some additional information and examples on graphing</p>
+
+ <p class="sampleGraphs"><a href="images/pie_graph.gif">Sample Pie graph</a><br>
+  <a href="images/bar_graph.gif">Sample Bar graph</a><br>
+  <a href="images/line_graph.gif">Sample Line Graph</a><br>
+  <a href="images/area_graph.gif">Sample Area Graph</a> <br>
+  <a href="#" rel="xy graph">Sample XY Graph</a></p>
+</article>
+    </body>
+</html>

@@ -1,0 +1,40 @@
+<!doctype html>
+
+<html lang="en">
+    
+    <head>
+        <meta charset="utf-8" />
+        <title>Jquery Example 3 Manipulate Page Content</title>
+        
+        <!--[if lt IE 9]>
+            <script src="js/html5shiv.min.js"></script>
+        <![endif]-->
+        
+        <link href="../styles/main.css" type="text/css" rel="stylesheet" />
+        <script src="../js/jquery-3.1.0.min.js" type="text/javascript"></script>
+        
+        <!--Jquery -->
+        <script type="text/javascript">
+           $(document).ready(function(){
+              //nth-child has to be the elelemtn(in this example 'p') and it has to be the 'second' child of the parent
+               
+               $('p:nth-child(2)').css('color', 'red');
+               
+               // nth-ofptype has to be the element and at theat number but what proceeds it doens't matter. (less conditional)
+//               $('p:nth-of-type(2)').css('color', 'red');
+               
+          });
+        </script>
+        
+    </head>
+    
+    <body>
+    <h1 id="intro">Attribute Selectors</h1>
+    <section>
+       <h2>Nth Comparison</h2>
+        <p>First Paragraph</p>
+        <p>Second Paragraph</p>
+    </section>
+    
+    </body>
+</html>

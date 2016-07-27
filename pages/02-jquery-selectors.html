@@ -1,0 +1,44 @@
+<!doctype html>
+
+<html lang="en">
+    
+    <head>
+        <meta charset="utf-8" />
+        <title>Jquery Example 2 Selectors</title>
+        
+        <!--[if lt IE 9]>
+            <script src="js/html5shiv.min.js"></script>
+        <![endif]-->
+        
+        <link href="styles/main.css" type="text/css" rel="stylesheet" />
+        <script src="../js/jquery-3.1.0.min.js" type="text/javascript"></script>
+        
+        <!--Jquery -->
+        <script type="text/javascript">
+        $(document).ready(function(){
+          /* $("p").css('border', 'solid 4px blue'); changes the attribute of the <p> using css*/
+            /*$('.selectors').css('border', 'solid 4px red');*/
+            /*$('#mainHeadline').css('border', 'solid 4px red');*/
+            /*$('p:first').css('border', 'solid 4px red');*/
+            $('h2:not(.selectors)').css('border', 'solid 4px red');
+            
+        });
+        
+        </script>
+        
+    </head>
+    
+    <body>
+       <h1 id="mainHeadline" >Intro to jquery Selectors</h1>
+       <p>Selectors and filters provide a mehtod to find and extract information</p>
+       <h2 class="selectors">Selectors</h2>
+       <p class="selectors">Selectors are used to select  parts of a webpage using common CSS syle syntax</p>
+       <p>An example would be p&lt; &gt;to select this we would use ("p) and this weill select all paragraph tags. Once selected we can operate and manipulates them.</p>
+       
+       <h2 class="filters">Filters</h2>
+       <p>Filtesrs are used to refine the results returned from a selector.</p>
+       <p>An example would be: ("p:first") this will select the first paragraph tag in the returned set.</p>
+    
+    </body>
+    
+</html>
